@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
 
             bienvenidaButton.setOnClickListener {
                 WelcomeTextView.text = "He hecho click en el botón"
-                bienvenidaButton.text = "Hecho"
+                bienvenidaButton.text = "Done"
             }
 
     }
