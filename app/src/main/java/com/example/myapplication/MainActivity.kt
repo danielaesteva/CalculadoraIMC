@@ -2,29 +2,36 @@ package com.example.myapplication
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.text.Editable
 import android.view.View
 import android.widget.AutoCompleteTextView
 import android.widget.Button
+import android.widget.EditText
 import android.widget.TextView
 
 class MainActivity : AppCompatActivity() {
 
-    lateinit var WelcomeTextView: TextView
-    lateinit var bienvenidaButton: Button
+    lateinit var heighEditText: EditText
+    lateinit var weightEditView: TextView
+    lateinit var lesssbutton: Button
+    lateinit var addButton: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        WelcomeTextView = findViewById(R.id.welcomeTexView)
-        bienvenidaButton = findViewById(R.id.bienvenidaButton)
+        heighEditText = findViewById(R.id.heighEditText)
+        weightEditView = findViewById(R.id.weightEditView)
+        lesssbutton = findViewById(R.id.lesssbutton)
+        addButton = findViewById(R.id.lesssbutton)
 
-        WelcomeTextView.text = "Bienvenido a mi primera Aplicación"
+        setHigh()
+        setHigh()
+    }
 
-            bienvenidaButton.setOnClickListener {
-                WelcomeTextView.text = "He hecho click en el botón"
-                bienvenidaButton.text = "Done"
-            }
+    fun setHigh() {
+        heighEditText.setText(heighEditText.toString())
 
+        fun setWeight
     }
 }
